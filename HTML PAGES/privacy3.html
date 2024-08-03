@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 40px;
+            position: relative;
+            z-index: 1; /* Ensure header stays on top */
+        }
+
+        #sidebar {
+            height: 100vh;
+            width: 0;
+            background-color: #333;
+            color: #fff;
+            padding-top: 70px;
+            position: absolute; /* Change to absolute */
+            top: 0;
+            left: 0;
+            overflow-x: hidden;
+            transition: 0.5s;
+            z-index: 2; /* Set a higher z-index to overlay the content */
+        }
+
+        #sidebar a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 20px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        #sidebar a:hover {
+            background-color: #555;
+        }
+
+        #menuIcon {
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+            position: absolute; /* Change to absolute */
+            top: 20px;
+            left: 20px;
+            z-index: 3; /* Set a higher z-index to overlay the content */
+        }
+
+        #content {
+            margin-left: 0;
+            padding: 50px;
+            transition: margin-left 0.5s;
+        }
+
+        .dropdown-content {
+            display: none;
+            padding-left: 20px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .custom-box {
+            width: 250px;
+            height: 20px;
+            border: 3px solid #000;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom:30px;
+            cursor: pointer;
+            text-align:center;
+            color:white;
+            background-color: black;
+            opacity: 1;
+        }
+        .custom-box1 {
+            width: 250px;
+            height: 20px;
+            border: 3px solid #000;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom:30px;
+            cursor: pointer;
+            text-align: center;
+            background-color: white;
+            opacity: 1;
+            transition: opacity 0.3s;
+        }
+        .custom-box1:hover{
+            opacity:0.7;
+        }
+        .linkinput {
+            width: 250px;
+            padding: 10px;
+            border: 3px solid black;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-bottom: 30px;
+            transition: border 0.3s;
+        }
+
+        .linkinput:hover {
+            border-color: #3498db;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        }
+        .content
+        {
+           font-size:10px;   
+        }
+        u
+        {
+           list-style: square inside url('custom-bullet.png');
+           text-decoration:none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    </header>
+    <div id="menuIcon">&#9776;</div>
+    <div id="sidebar">
+        <a href="#">Profile</a>
+        <a href="#">ChatBot</a>
+        <div class="dropdown">
+            <a href="#">Websites</a>
+            <div class="dropdown-content">
+                <a href="privacy.html">Flipkart</a>
+                <a href="privacy2.html">Amazon</a>
+                <a href="#">Myntra</a>
+            </div>
+        </div>
+    </div>
+    <div id="content">
+        <div class="custom-box"><b>MYNTRA</b></div>
+        <div class="content">
+        <h2>PRIVACY POLICY</h2>
+        </div>
+        <div class="content1">
+        <u>
+        <li>The platform collects personal information such as name, contact details, address, and KYC details during sign-up and product transactions.</li>
+<li>Sensitive information like financial details and biometric data may be required for specific features.</li><li> User behavior, preferences, and provided information are utilized to enhance the personalized experience.</li><li>The platform may also use collected data for research and analysis. Users are cautioned about posting personal details in public areas.</li> <li>The platform retains information for dispute resolution, customer support, and internal research.</li><li>Caution is advised against sharing sensitive information in response to unsolicited communication claiming to be from the platform.</li><li>The platform uses personal information to provide requested services, improve customer experience, and fulfill orders. Users may opt-out of marketing communications.</li><li>Data is used for safety, fraud prevention, and to comply with legal obligations.</li><li> Information may be shared internally, with affiliates, or third parties for service provision, marketing, and legal compliance. The platform utilizes cookies for analysis and personalization.</li><li> Security measures align with ISO/IEC 27001:2013 standards.</li><li> Users can opt-out of non-essential communications. Third-party ads may be served, and children under 18 are not targeted.</li><li> Data retention follows legal requirements, and users have rights to access, correct, or delete their information.</li><li> Consent is obtained for data processing, and the privacy policy may be updated with notice to users.</li></u>
+</div>
+        <div class="content">
+        <h2>TERMS OF USE</h2>
+        </div>
+        <div class="content1">
+        <u>
+        <li>By utilizing Myntra's platform, users implicitly agree to abide by the Terms of Use and adhere to the platform's policies, including the Privacy Policy.</li><li>Users bear the responsibility of safeguarding their account information confidentiality.</li><li> Myntra operates as an online service for acquiring fashion products, facilitating transactions between users while explicitly stating that it is not a party to these transactions.</li><li>Compliance with specified principles and rules is mandatory, with users prohibited from participating in unlawful or fraudulent activities.</li><li> Myntra retains the right to cancel orders under certain criteria, and users may forfeit Myntra Credits if their accounts are terminated.</li><li> The accuracy of product descriptions is not guaranteed, and returns are subject to Myntra's Return & Exchange Policy.</li><li>The terms encompass user responsibilities, account security, and interactions, emphasizing the need to maintain the confidentiality of account information.</li><li> The platform serves as an internet-based service for fashion product purchases, and users are obliged to adhere to guidelines related to content posting, conduct, and rules.</li><li>Myntra disclaims warranties, limits liability, and establishes ownership rights over user-posted content. The terms detail refund procedures, compliance with laws, and indemnity requirements.</li><li> Functioning as a facilitator for transactions, users are obligated to indemnify Myntra against any claims.</li><li> Copyright and trademark restrictions, along with limitations of liability, are clearly defined.Additionally, the terms of service encompass various aspects, including termination conditions, jurisdictional issues, governing laws, disclaimers, and contact information.</li><li> Myntra possesses the authority to suspend or terminate user accounts for policy violations, with the platform primarily intended for sales in India and disputes subject to Bangalore jurisdiction.</li><li>Myntra disclaims liability for seller actions and product quality, establishing a 5-day window for reporting delivery issues.</li><li> The document further outlines specific offers, alteration services, and additional terms concerning cart notifications, multiple sellers, and convenience fees.</li><li>Users are encouraged to review the terms, and Myntra retains the right to modify them as deemed necessary.</li>    
+</u>
+</div>
+<div class="content">
+        <h2>DARK PATTERN PRIVACY POLICY</h2>
+        </div>
+        <div class="content1">
+        <u>
+        <li>While the policy mentions the ability to opt-out of certain uses of personal information, it doesn't provide clear, easily accessible instructions on how to do so. Users are directed to the Help Center with a complex URL.</li><li>The policy mentions the collection of sensitive personal information, such as biometric data (facial features or physiological information) and voice data.</li><li> Collecting such sensitive information might be invasive, and users may not be fully aware of the extent of data being collected.</li><li>he policy advises users to check periodically for changes but doesn't highlight the importance of regularly reviewing updates. Users might miss crucial changes that impact their privacy.</li><li> The process for withdrawing consent is outlined, but the policy mentions that withdrawal "may hamper your access to the Platform or restrict provision of our services"</li><li> This could be seen as a form of discouragement from exercising the right to withdraw consent.</li>
+        </u>
+        </div>
+        <div class="content">
+        <h2>DARK PATTERN TERMS OF USE</h2>
+        </div>
+        <div class="content1">
+        <u>
+        <li>While disclosure about convience fee may be clear there maybe hidden cost.Additionally, there is a mention of protecting customer rights by collecting the fee for certain accounts with high returns and unaccepted shipments.</li><li> Always reading the fine print and understanding the terms is crucial for making informed decisions when using online platforms.</li><li>The content mentions that Myntra reserves the right to change/modify/add/delete any of the terms and conditions of MSG.</li><li>Users should be aware that the terms may be subject to changes, and it's essential to review them regularly.</li><li>Make it difficult for users to find the option to opt-out or request data deletion, burying it deep within settings or making the process complex.</li><li> Deliberately present inaccurate product descriptions or hide essential information to encourage users to make purchases without fully understanding the product.</li><li>Conceal essential details about transaction processes, such as hidden fees or unclear terms, making it challenging for users to make informed decisions.</li><li>The use of the term "conditional" may be exploited to make the refund process unclear or subject to hidden conditions, leading to user confusion.</li><li>The use of the term "conditional" may be exploited to make the refund process unclear or subject to hidden conditions, leading to user confusion.</li><li>Emphasizing limited liability might be used to evade responsibility for certain issues, potentially leaving users without proper support or resolution.
+</li>
+</u>
+</div>
+    <script>
+        document.getElementById('menuIcon').addEventListener('click', function() {
+            const sidebar = document.getElementById('sidebar');
+            if (sidebar.style.width === '200px') {
+                sidebar.style.width = '0';
+            } else {
+                sidebar.style.width = '200px';
+            }
+        });
+    </script>
+</body>
+</html>

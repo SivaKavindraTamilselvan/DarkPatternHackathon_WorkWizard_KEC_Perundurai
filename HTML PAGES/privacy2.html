@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 40px;
+            position: relative;
+            z-index: 1; /* Ensure header stays on top */
+        }
+
+        #sidebar {
+            height: 100vh;
+            width: 0;
+            background-color: #333;
+            color: #fff;
+            padding-top: 70px;
+            position: absolute; /* Change to absolute */
+            top: 0;
+            left: 0;
+            overflow-x: hidden;
+            transition: 0.5s;
+            z-index: 2; /* Set a higher z-index to overlay the content */
+        }
+
+        #sidebar a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 20px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        #sidebar a:hover {
+            background-color: #555;
+        }
+
+        #menuIcon {
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+            position: absolute; /* Change to absolute */
+            top: 20px;
+            left: 20px;
+            z-index: 3; /* Set a higher z-index to overlay the content */
+        }
+
+        #content {
+            margin-left: 0;
+            padding: 50px;
+            transition: margin-left 0.5s;
+        }
+
+        .dropdown-content {
+            display: none;
+            padding-left: 20px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .custom-box {
+            width: 250px;
+            height: 20px;
+            border: 3px solid #000;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom:30px;
+            cursor: pointer;
+            text-align:center;
+            color:white;
+            background-color: black;
+            opacity: 1;
+        }
+        .custom-box1 {
+            width: 250px;
+            height: 20px;
+            border: 3px solid #000;
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom:30px;
+            cursor: pointer;
+            text-align: center;
+            background-color: white;
+            opacity: 1;
+            transition: opacity 0.3s;
+        }
+        .custom-box1:hover{
+            opacity:0.7;
+        }
+        .linkinput {
+            width: 250px;
+            padding: 10px;
+            border: 3px solid black;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-bottom: 30px;
+            transition: border 0.3s;
+        }
+
+        .linkinput:hover {
+            border-color: #3498db;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        }
+        .content
+        {
+           font-size:10px;   
+        }
+        u
+        {
+           list-style: square inside url('custom-bullet.png');
+           text-decoration:none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    </header>
+    <div id="menuIcon">&#9776;</div>
+    <div id="sidebar">
+        <a href="#">Profile</a>
+        <a href="#">ChatBot</a>
+        <div class="dropdown">
+            <a href="#">Websites</a>
+            <div class="dropdown-content">
+                <a href="privacy.html">Flipkart</a>
+                <a href="#">Amazon</a>
+                <a href="privacy3.html">Myntra</a>
+            </div>
+        </div>
+    </div>
+    <div id="content">
+        <div class="custom-box"><b>AMAZON</b></div>
+        <div class="content">
+        <h2>PRIVACY POLICY</h2>
+        </div>
+        <div class="content1">
+       <u>
+        <li>Amazon collects various types of personal information from users to operate, provide, develop, and improve its products and services.</li><li>The information falls into three categories:<br>
+&nbsp&nbsp&nbsp&nbsp;1.Information You Give:Users provide information related to Amazon services, such as personal details, during searches, shopping, account setup, and other interactions.<br>
+&nbsp&nbsp&nbsp&nbsp2.Automatic Information:Amazon automatically collects and stores data on users' interactions with its services. This includes information about content use, device metrics, IP addresses, login details, and more. Cookies and identifiers are used for this purpose.<br>
+&nbsp&nbsp&nbsp&nbsp3.Information from Other Sources:Amazon may receive additional information from third parties, such as updated delivery details, account information from affiliates, and credit history information from credit bureaus.</li>
+<li>Amazon utilizes personal information for various purposes, including purchase and delivery of products, improving services, providing personalized recommendations, complying with legal obligations, communicating with users, advertising, fraud prevention, and managing credit risks.</li><li>Amazon emphasizes security measures to protect users' personal information during transmission and maintains safeguards for data storage. Users can access and manage their information through the "Your Account" section.</li><li> Amazon does not sell customers' personal information but may share it with third parties for specific purposes, such as transactions, service providers, and business transfers.</li><li>
+Users have choices regarding the information they provide, preferences for communication, and options to manage cookies and identifiers.</li><li>Amazon's Privacy Notice is subject to change, and users are encouraged to check for updates regularly.</li><li>The privacy practices are in accordance with applicable laws, and Amazon commits to protecting customer information.</li>
+</u>
+</div>
+        <div class="content">
+        <h2>TERMS OF USE</h2>
+        </div>
+        <div class="content1">
+        <u>
+        <li>The Amazon Services Terms of Use outline the agreement between users and Amazon Digital Services LLC.</li><li>Users must read this agreement, along with other applicable terms, before using Amazon Services on a Product.</li><li> The agreement covers the use of Amazon Software, Digital Content, and support services.</li><li>Users need an Amazon.in account, valid payment method, and internet connectivity.</li><li>The Amazon Software can be used on the Product, and voice services like Alexa may be accessible.</li><li>The agreement emphasizes information processing and privacy, connectivity requirements, service changes, termination conditions, and dispute resolution through binding arbitration.</li><li>Amazon disclaims warranties and limits liability, especially regarding third-party Products.</li><li>For assistance, users can contact Customer Service at www.amazon.in/contact-us/.</li><li>The provided terms and conditions outline various aspects of using Amazon.in.</li><li>Key points include user responsibilities for account security, privacy practices, the nature of the website as a platform for transactions between users and sellers, intellectual property rights, disclaimers of warranties, indemnity clauses, and guidelines for user conduct. Users are urged to carefully read and comply with these conditions.</li><li>Amazon Seller Services Private Limited reserves the right to make changes to policies and conditions.</li><li>The document concludes with details about governing law, jurisdiction, contact information, and procedures for addressing claims of right infringements.</li>
+</u>
+</div>
+<div class="content">
+        <h2>DARK PATTERN PRIVACY POLICY</h2>
+        </div>
+        <div class="content1">
+        <u>
+        <li>Opt-out Complexity:Amazon mentions that users can adjust their advertising preferences, but the process for opting out of interest-based ads might be intentionally complex.</li><li>Users may find it challenging to locate and navigate the settings to disable such ads.<br>
+&nbsp&nbsp&nbsp&nbsp1.Default Settings:Amazon's default settings may prioritize data collection for personalization and advertising. Users who don't actively change these settings may unknowingly allow more extensive data sharing and targeted advertising.<br>
+&nbsp&nbsp&nbsp&nbsp2.Consent Bundling:Sometimes, consent for data collection is bundled together, making it difficult for users to selectively opt out of certain data processing activities.This lack of granularity can lead to unintentional consent.<br>
+&nbsp&nbsp&nbsp&nbsp3.Limited Information on Data Sharing:While Amazon states that it does not sell personal information, the extent of data sharing with third parties is not explicitly detailed.</li><li> Users may not be fully aware of the entities with which their information is being shared.</li>
+        </u>
+        </div>
+        <div class="content">
+        <h2>DARK PATTERN TERMS OF USE</h2>
+        </div>
+        <div class="content1">
+        <u>
+        <li>Going to different links in terms of use for other important user details is there. </li><li>Hiding of information by not making it visible.</li>
+</u>
+</div>
+    <script>
+        document.getElementById('menuIcon').addEventListener('click', function() {
+            const sidebar = document.getElementById('sidebar');
+            if (sidebar.style.width === '200px') {
+                sidebar.style.width = '0';
+            } else {
+                sidebar.style.width = '200px';
+            }
+        });
+    </script>
+</body>
+</html>

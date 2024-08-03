@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 40px;
+            position: relative;
+            z-index: 1; /* Ensure header stays on top */
+        }
+
+        #sidebar {
+            height: 100vh;
+            width: 0;
+            background-color: #333;
+            color: #fff;
+            padding-top: 70px;
+            position: absolute; /* Change to absolute */
+            top: 0;
+            left: 0;
+            overflow-x: hidden;
+            transition: 0.5s;
+            z-index: 2; /* Set a higher z-index to overlay the content */
+        }
+
+        #sidebar a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 20px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+
+        #sidebar a:hover {
+            background-color: #555;
+        }
+
+        #menuIcon {
+            color: white;
+            font-size: 30px;
+            cursor: pointer;
+            position: absolute; /* Change to absolute */
+            top: 20px;
+            left: 20px;
+            z-index: 3; /* Set a higher z-index to overlay the content */
+        }
+
+        #content {
+            margin-left: 0;
+padding-top:100px;
+            padding-left: 600px;
+            transition: margin-left 0.5s;
+        }
+
+        .dropdown-content {
+            display: none;
+            padding-left: 20px;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .custom-box {
+            width: 250px;
+            height: 20px;
+            border: 3px solid #000;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            text-align: center;
+            background-color: #d3d3d3;
+            opacity: 1;
+            transition: opacity 0.3s;
+        }
+
+        .custom-box:hover {
+            opacity: 0.5;
+        }
+
+        .linkinput {
+            width: 250px;
+            padding: 10px;
+            border: 3px solid black;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-bottom: 30px;
+            transition: border 0.3s;
+        }
+
+        .linkinput:hover {
+            border-color: #3498db;
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <header>
+    </header>
+    <div id="menuIcon">&#9776;</div>
+    <div id="sidebar">
+        <a href="#">Profile</a>
+        <a href="#">ChatBot</a>
+        <div class="dropdown">
+            <a href="#">Websites</a>
+            <div class="dropdown-content">
+                <a href="privacy.html">Flipkart</a>
+                <a href="privacy2.html">Amazon</a>
+                <a href="privacy3.html">Myntra</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="content">
+        <!-- Your main content goes here -->
+        <h1>PRODUCT LINK</h1>
+        <input type="text" class="linkinput" placeholder="Paste your link here" name="username" required>
+        <div class="custom-box">
+            <b>CONTINUE</b>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('menuIcon').addEventListener('click', function() {
+            const sidebar = document.getElementById('sidebar');
+            if (sidebar.style.width === '200px') {
+                sidebar.style.width = '0';
+            } else {
+                sidebar.style.width = '200px';
+            }
+        });
+    </script>
+
+</body>
+</html>
